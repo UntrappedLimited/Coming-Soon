@@ -528,7 +528,11 @@
                  </div>
                  <!-- Text Area -->
                  <div class="col-xl-6 mg-auto mt-3">
-                     <textarea placeholder="If you have any suggestions or questions please let us know!" name="MultiLine" maxlength="400"></textarea>
+                     <textarea placeholder="If you have any suggestions or questions please let us know!" name="MultiLine" maxlength="300"></textarea>
+                     <div id="counter">
+                        <span id="current">0</span>
+                        <span id="maximum">/ 300</span>
+                      </div>
                  </div>
                  <!--Checkbox-->
                  <div class="col-xl-6 mg-auto text-left">
@@ -646,6 +650,46 @@
 <script src='https://dl.dropboxusercontent.com/s/p2rq84umbpvpx50/bootstrap.min.js?dl=0'> </script>
 <script src='https://dl.dropboxusercontent.com/s/k9z1h3hz945aruh/jquery.scrollUp.min.js?dl=0'></script>
 <script src='./Coming-Soon.min.js'></script>
+<script>
+  $('textarea').keyup(function() {
+    
+    var characterCount = $(this).val().length,
+        current = $('#current'),
+        maximum = $('#maximum'),
+        theCount = $('#counter');
+      
+    current.text(characterCount);
+   
+    
+    /*This isn't entirely necessary, just playin around*/
+    if (characterCount < 70) {
+      current.css('color', '#666');
+    }
+    if (characterCount > 70 && characterCount < 90) {
+      current.css('color', '#6d5555');
+    }
+    if (characterCount > 90 && characterCount < 100) {
+      current.css('color', '#793535');
+    }
+    if (characterCount > 100 && characterCount < 120) {
+      current.css('color', '#841c1c');
+    }
+    if (characterCount > 120 && characterCount < 139) {
+      current.css('color', '#8f0001');
+    }
+    
+    if (characterCount >= 140) {
+      maximum.css('color', '#8f0001');
+      current.css('color', '#8f0001');
+      theCount.css('font-weight','bold');
+    } else {
+      maximum.css('color','#666');
+      theCount.css('font-weight','normal');
+    }
+    
+        
+  });
+  </script>
     
 </body>
 </html>
