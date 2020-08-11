@@ -139,6 +139,9 @@ form button:hover {
 }
 
 /* Sub-Footer */
+.sub-footer{
+    width: 100%;
+}
 .sub-footer .social-list li a {
     margin-left: 20px;
     color: #fff;
