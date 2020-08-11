@@ -7,14 +7,7 @@
     <meta name="Description" content="Untrapped Is Delivering The Future Of Student Renting. A One Stop Portal Designed For Both Landlords And Students.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel='icon' href='favicon.ico' type='image/x-icon'/ >
-    <link crossorigin='anonymous' href='https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css' integrity='sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z' rel='stylesheet preconnect preload'/>
-    <link rel="stylesheet" type="text/css" href="./Coming-Soon.css">
-    <!-- External CSS libraries -->
-    <link crossorigin='anonymous' href='https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css' integrity='sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z' rel='stylesheet preconnect preload'>
-  
-    <!-- Bootstrap Scripts -->
-    <script rel='preconnect' src='https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js'> </script>
-    <script crossorigin='anonymous' integrity='sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV' re='preconnect' src='https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js'> </script>
+    <link rel="stylesheet" type="text/css" href="./Coming-Soon.min.css">
     <script src="https://kit.fontawesome.com/796f814fb8.js" crossorigin="anonymous"></script>
 </head>
 
@@ -53,7 +46,7 @@
              </svg>
          </a>
          <!-- Nabar Collapse -->
-         <button aria-controls='navbar-main-collapse' aria-expanded='false' aria-label='Toggle navigation' class='navbar-toggler pr-0' data-target='#navbar-main-collapse' data-toggle='collapse' type='button'>
+         <button class="navbar-toggler pr-0" type="button" data-toggle="collapse" data-target="#navbar-main-collapse" aria-controls="navbar-main-collapse" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
          <!-- Navbar Nav-->
@@ -655,9 +648,10 @@
  </div>
 </footer>
 
-
-
+    <script rel='preconnect' src='https://dl.dropboxusercontent.com/s/q8212k07pavbe15/jquery-2.2.0.min.js?dl=0'> </script>
+<script src='https://dl.dropboxusercontent.com/s/p2rq84umbpvpx50/bootstrap.min.js?dl=0'> </script>
 <script src='https://dl.dropboxusercontent.com/s/k9z1h3hz945aruh/jquery.scrollUp.min.js?dl=0'></script>
+<script src='./Coming-Soon.min.js'></script>
 <script>
   $('textarea').keyup(function() {
     
@@ -668,8 +662,6 @@
       
     current.text(characterCount);
    
-    
-    /*This isn't entirely necessary, just playin around*/
     if (characterCount < 70) {
       current.css('color', '#666');
     }
