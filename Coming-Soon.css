@@ -246,6 +246,10 @@ form button:hover {
     transition: .5s;
 }
 
+.footer .heading{
+    font-weight: bold;
+}
+
 .sub-footer {
     padding-bottom: 75px;
     padding: 20px 0
