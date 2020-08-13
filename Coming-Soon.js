@@ -5,69 +5,6 @@
 
 'use strict';
 
-var NavbarCollapse = (function() {
-
-	// Variables
-
-    var $nav = $('#navbar-main'),
-	    $collapse = $('#navbar-main-collapse');
-
-
-	// Methods
-
-	function showNavbarCollapse($this) {
-        $nav.addClass('navbar-collapsed');
-        $('#header-main').addClass('header-collapse-show')
-	}
-
-    function hideNavbarCollapse($this) {
-        $this.removeClass('collapsing').addClass('collapsing-out');
-        $nav.removeClass('navbar-collapsed').addClass('navbar-collapsed-out');
-	}
-
-    function hiddenNavbarCollapse($this) {
-        $this.removeClass('collapsing-out');
-        $nav.removeClass('navbar-collapsed-out');
-        $('#header-main').removeClass('header-collapse-show')
-	}
-
-
-	// Events
-
-    if ($collapse.length) {
-    	$collapse.on({
-    		'show.bs.collapse': function() {
-    			showNavbarCollapse($collapse);
-    		}
-    	})
-
-        $collapse.on({
-    		'hide.bs.collapse': function() {
-                hideNavbarCollapse($collapse);
-    		}
-    	})
-
-        $collapse.on({
-    		'hidden.bs.collapse': function() {
-                hiddenNavbarCollapse($collapse);
-    		}
-    	})
-    }
-
-})();
-$('.navbar-nav>li>a').on('click', function(){
-    $('.navbar-collapse').collapse('hide');
-});
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
-        });
-    });
-});
-
 $((function() {
     "use strict";
 
@@ -92,3 +29,44 @@ $((function() {
     
 }
 ));
+
+
+$('textarea').keyup(function() {
+    
+    var characterCount = $(this).val().length,
+        current = $('#current'),
+        maximum = $('#maximum'),
+        theCount = $('#counter');
+      
+    current.text(characterCount);
+   
+    
+    /*This isn't entirely necessary, just playin around*/
+    if (characterCount < 70) {
+      current.css('color', '#666');
+    }
+    if (characterCount > 70 && characterCount < 90) {
+      current.css('color', '#6d5555');
+    }
+    if (characterCount > 90 && characterCount < 100) {
+      current.css('color', '#793535');
+    }
+    if (characterCount > 100 && characterCount < 120) {
+      current.css('color', '#841c1c');
+    }
+    if (characterCount > 120 && characterCount < 139) {
+      current.css('color', '#8f0001');
+    }
+    
+    if (characterCount >= 140) {
+      maximum.css('color', '#8f0001');
+      current.css('color', '#8f0001');
+      theCount.css('font-weight','bold');
+    } else {
+      maximum.css('color','#666');
+      theCount.css('font-weight','normal');
+    }
+    
+        
+  });
+  
