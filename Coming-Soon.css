@@ -352,7 +352,7 @@ a i.fa-youtube-square:hover,a i.fa-youtube:hover {
 }
 @media(max-width:768px){
     #page_scroller{
-        bottom:85px
+        bottom:95px
     }
 }
 @media(min-width:992px){
