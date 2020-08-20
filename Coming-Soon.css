@@ -1,8 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,500|Nunito:300|Montserrat:300,400,600);
 
-html{
-    scroll-behavior: smooth;
-}
 
 body {
     font-family: montserrat, sans-serif;
