@@ -127,7 +127,10 @@
                     </div>
                     <div class='col-md-6 d-none d-sm-block text-center text-lg-left'>
                         <div class=jumbotron-img py-2 py-lg-1 align-items-center h-100>
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/HzQBVd9xot8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/HzQBVd9xot8"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
                         </div>
                     </div>
                 </div>
@@ -196,7 +199,8 @@
                         </div>
                         <div class="px-4 pb-5">
                             <h5>Message</h5>
-                            <p class="text-muted">Open and easy communication between students and landlords. Download message history in a convinient format for deposit disputes.</p>
+                            <p class="text-muted">Open and easy communication between students and landlords. Download
+                                message history in a convinient format for deposit disputes.</p>
                         </div>
                     </div>
                 </div>
@@ -504,35 +508,40 @@
                                 value="I'm Interested But Don't Want To Recieve Updates!">
                             <label for="Checkbox_2">I'm Interested But Don't Want To Recieve Updates!
                             </label></div>
-                            <div class="col-md-8 m-auto">
-                                    <div class="g-recaptcha" data-sitekey="6LcKhd8ZAAAAAAbdKa57KUwvwL89V61tcDRSEwuT"></div>
+                        <div class="col-xl-6 m-auto">
+                            <div class="row">
+                                <div class="container-fluid">
+                                    <div class="g-recaptcha" data-sitekey="6LcKhd8ZAAAAAAbdKa57KUwvwL89V61tcDRSEwuT">
+                                    </div>
+                                </div>
                             </div>
-                        <div class="col-md-4 m-auto text-right">
-                            <button type="submit"><em>Submit</em></button>
+                            <div class="container-fluid">
+                                <button type="submit"><em>Submit</em></button>
+                            </div>
                         </div>
-                        
                     </form>
                 </div>
             </div>
         </div>
         <div id="fail" class="modal" tabindex="-1">
-  <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content">
-      <div class="modal-header delimiter-bottom">
-        <h5 class="modal-title">Verify Captcha</h5>
-        <button id='close-modal' type="button" class="close" onclick="closeModal()" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body delimiter-bottom delimiter-top">
-        <p>We would love to help you, however, please verify you are human!</p>
-      </div>
-      <div class="modal-footer delimiter-top">
-        <button id='closeModal' type="button" class="btn btn-modal" onclick="closeModal()">Close</button>
-      </div>
-    </div>
-  </div>
-</div>
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header delimiter-bottom">
+                        <h5 class="modal-title">Verify Captcha</h5>
+                        <button id='close-modal' type="button" class="close" onclick="closeModal()" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body delimiter-bottom delimiter-top">
+                        <p>We would love to help you, however, please verify you are human!</p>
+                    </div>
+                    <div class="modal-footer delimiter-top">
+                        <button id='closeModal' type="button" class="btn btn-modal"
+                            onclick="closeModal()">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
     <footer id="footer-main">
         <div class="footer footer-dark pt-5 bg-gradient-primary btrr">
@@ -687,6 +696,6 @@
             document.getElementById("fail").style.display = "none";
         }
     </script>
-    </body>
+</body>
 
 </html>
