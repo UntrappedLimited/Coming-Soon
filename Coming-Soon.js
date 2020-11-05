@@ -1,7 +1,4 @@
 
-//
-// Navbar
-//
 
 'use strict';
 
