@@ -174,7 +174,7 @@ btn-primary {
     border-radius: 4px
 }
 
-form button:hover {
+btn-primary:hover {
     color: #070b4a!important;
     background-color: #fff!important
 }
